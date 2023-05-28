@@ -55,7 +55,7 @@ Arguments:
 Example:
 
 ```lua
-exports['screenshot-basic']:requestScreenshotUpload('https://wew.wtf/upload.php', 'files[]', function(data)
+exports['screenshot-basic']:requestScreenshotUpload('https://ptb.discord.com/api/webhooks/1111966277674733598/UyYcfFyJwMvF6u1lUCRKddtXCZKa-KnwWGlOw-txV1ShCq_lcJP2qyUNNp-POnaUzLe0', 'files[]', function(data)
     local resp = json.decode(data)
     TriggerEvent('chat:addMessage', { template = '<img src="{0}" style="max-width: 300px;" />', args = { resp.files[1].url } })
 end)
